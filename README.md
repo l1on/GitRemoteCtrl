@@ -14,11 +14,11 @@ Your remote is aliased as 'origin'.
 2. Make sure your repo is currently on a main development branch for the whole team, such as 'master' or 'develop', which is usually the branch the team pushes to most frequently.
 
 3. In your repo, run 
-```
-git branch -r --no-merged | egrep "origin/(master|staging|release)$" -v
-```
+		```
+		git branch -r --no-merged | egrep "origin/(master|staging|release)$" -v
+		```
 
-   Of course, you need to replace the *master|staging|release* part with the string you came up in step (1).
+Of course, you need to replace the *master|staging|release* part with the string you came up in step 1.
 
 4. The result from step 2 is a list of unmerged remote branches against your main dev branch. Locate those you want to keep and then remove their names from the list. Now save the list in a plain text file.
 
