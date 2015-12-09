@@ -1,6 +1,5 @@
-**************
-  What's this
-**************
+## What's this
+
 A bash script to delete remote branches. Only for use with git.
 
 **************
@@ -21,8 +20,9 @@ Your remote is aliased as 'origin'.
 4. The result from step 2 is a list of unmerged remote branches against your main dev branch. Locate those you want to keep and then remove their names from the list. Now save the list in a plain text file.
 
 5. Run the script on your machine, like this: 
-	
+	```
 	./git_remote_branches_removal.sh <path/to/your/repo> <path/to/file/from/step/4> '<string_you_came_up_in_step_1>'
+	```
 
 	Example: ./git_remote_branches_removal.sh /Users/me/Code/MyRepo my_blacklist_file_created_in_step_4 'release|master|staging'
 
