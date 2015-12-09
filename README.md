@@ -17,7 +17,7 @@ Your remote is aliased as 'origin'.
 ```
 git branch -r --no-merged | egrep "origin/(master|staging|release)$" -v
 ```
-Of course, you need to replace the *master|staging|release* part with the string you came up in step 1.
+Of course, you need to replace the *master|staging|release* part with the string you came up in step 1
 
 4. The result from step 2 is a list of unmerged remote branches against your main dev branch. Locate those you want to keep and then remove their names from the list. Now save the list in a plain text file.
 
@@ -31,6 +31,6 @@ Example:
 ./git_remote_branches_removal.sh /Users/me/Code/MyRepo my_blacklist_file_created_in_step_4 'release|master|staging'
 ```
 
-## Runing result
+## Running result
 
 Except for the branches you came up in step 1 AND all the unmerged branches (against your team main development branch) not in the file from step 4, all the other remote branches will be deleted. 
